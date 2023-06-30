@@ -27,17 +27,6 @@
 		<dep.junit.version>4.12</dep.junit.version>
 		<dep.slf4j.version>1.5.11</dep.slf4j.version>
 	</properties>
-	<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>cobertura-maven-plugin</artifactId>
-    <configuration>
-       <formats>
-           <format>html</format>
-           <format>xml</format>
-       </formats>
-    </configuration>
-</plugin>
-	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
