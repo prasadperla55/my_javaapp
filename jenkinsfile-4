@@ -11,5 +11,10 @@ pipeline{
                 sh 'kubectl create -f deployment.yml'
             }
         }
+        stage('pods check'){
+          steps{
+            sh 'kubectl get pods'
+          }
+        }
     }
 }
