@@ -11,6 +11,11 @@ pipeline{
                 sh 'kubectl create -f deployment.yml'
             }
         }
+        stage('wait for pods'){
+           steps{
+             sleep 300
+           }
+        }
         stage('pods check'){
           steps{
             sh 'kubectl get pods'
