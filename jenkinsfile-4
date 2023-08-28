@@ -8,8 +8,10 @@ pipeline{
         }
         stage('deploy in k8'){
             steps{
-                sh 'echo 'start deployment''
-                sh 'kubectl apply -f deployment.yml'
+                script{
+                 sh 'echo 'start deployment''
+                 sh 'kubectl apply -f deployment.yml'
+                }
             }
         }
         stage('wait for pods'){
