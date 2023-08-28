@@ -17,5 +17,7 @@ spec:
       containers:
       - name: project
         image: sureshkiran/stsdevops:v1
+        command: [ "sleep" ]
+        args: [ "infinity" ]
         ports:
         - containerPort: 8080
