@@ -8,7 +8,7 @@ pipeline{
         }
         stage('deploy in k8'){
             steps{
-                sh 'kubectl create -f deployment.yml'
+                sh 'kubectl apply -f deployment.yml'
             }
         }
         stage('wait for pods'){
